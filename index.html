@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Muni Shalini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Portfolio</h2>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects" id="projects-link">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hello, It's <span class="highlight">Muni Shalini</span></h1>
+            <h2 class="typing-effect"></h2>
+            <div class="roles-box">
+                <span class="role">AI/ML Engineer</span>
+                <span class="role">Web Developer</span>
+                <span class="role">Tech Enthusiast</span>
+            </div>
+            <div class="profile-container">
+                <img src="profile.png" alt="Muni Shalini Profile" class="profile-image">
+            </div>
+            <a href="Muni_Shalini_Compact_Resume.pdf" download class="btn">Download CV</a>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+<section id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p><strong>🎓 College:</strong> Gouthami Institute of Technology and Management for Women</p>
+                <p><strong>📚 Degree:</strong> B.Tech in CSE (AI/ML Specialization)</p>
+                <p><strong>📅 Year:</strong> 3rd Year</p>
+                <p class="highlight-text">I love building AI models, web apps, and exploring new technologies. My goal is to create innovative solutions and make an impact in the tech world.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h1 class="section-title">My <span>Skills</span></h1>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-name">HTML <span>90%</span></div>
+                <div class="progress-bar"><div class="progress" data-width="90"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">CSS <span>80%</span></div>
+                <div class="progress-bar"><div class="progress" data-width="80"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">JavaScript <span>75%</span></div>
+                <div class="progress-bar"><div class="progress" data-width="75"></div></div>
+            </div>
+        </div>
+    </section>
+    
+    <h2>Professional Skills</h2>
+<div class="circle-container">
+    <div class="circle">
+        <svg>
+            <circle cx="50" cy="50" r="40"></circle>
+            <circle cx="50" cy="50" r="40" class="progress-circle" data-progress="90"></circle>
+        </svg>
+        <p class="percentage-text">90%</p>
+        <p>Creativity</p>
+    </div>
+    <div class="circle">
+        <svg>
+            <circle cx="50" cy="50" r="40"></circle>
+            <circle cx="50" cy="50" r="40" class="progress-circle" data-progress="65"></circle>
+        </svg>
+        <p class="percentage-text">65%</p>
+        <p>Communication</p>
+    </div>
+    <div class="circle">
+        <svg>
+            <circle cx="50" cy="50" r="40"></circle>
+            <circle cx="50" cy="50" r="40" class="progress-circle" data-progress="75"></circle>
+        </svg>
+        <p class="percentage-text">75%</p>
+        <p>Problem Solving</p>
+    </div>
+    <div class="circle">
+        <svg>
+            <circle cx="50" cy="50" r="40"></circle>
+            <circle cx="50" cy="50" r="40" class="progress-circle" data-progress="85"></circle>
+        </svg>
+        <p class="percentage-text">85%</p>
+        <p>Teamwork</p>
+    </div>
+</div>
+
+    
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2>My GitHub Projects</h2>
+        <div id="projects-container"></div>
+    </section>
+    <div class="contact-container">
+        <button id="contact-btn" onclick="toggleContact()">Contact</button>
+    
+        <div id="contact-details" class="hidden">
+            <h2>Professional Skills</h2>
+            <p><strong>Name:</strong> Shalini</p>
+            <p><strong>Email:</strong> munishalini27@example.com</p>
+            <p><strong>Phone:</strong> 9876543210</p>
+            <p><strong>LinkedIn:</strong> <a href="#">Your LinkedIn</a></p>
+            <p><strong>GitHub:</strong> <a href="#">Your GitHub</a></p>
+        </div>
+    </div>
+    
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Muni Shalini | All Rights Reserved</p>
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>

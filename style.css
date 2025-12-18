@@ -1,0 +1,452 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #0d1117, #1e293b);
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+    padding-top: 80px; /* Avoid overlap with fixed navbar */
+}
+
+/* NAVBAR */
+header {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    position: fixed;
+    width: 90%;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00d2ff, #ff00ff);
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 8px 16px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00d2ff;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Main Heading */
+h1 {
+    font-size: 3.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.highlight {
+    background: linear-gradient(45deg, #00d2ff, #ff00ff);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+/* Typing Effect Cursor */
+.typing-effect::after {
+    content: "|";
+    color: #00d2ff;
+    font-size: 1.2em;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Role Badges */
+.roles-box {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.role {
+    background: linear-gradient(45deg, #00d2ff, #ff00ff);
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00d2ff;
+}
+
+/* Profile Image */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px #00d2ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-image:hover {
+    box-shadow: 0 0 30px #ff00ff;
+    transform: scale(1.05);
+}
+
+/* BUTTON */
+.btn {
+    background: linear-gradient(45deg, #00d2ff, #ff00ff);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #00d2ff;
+    transform: translateY(-5px);
+}
+/* 🌌 About Section Styling */
+#about {
+    background: #0a192f; /* Dark Blue Background */
+    color: #ffffff; /* White Text */
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* 🎨 Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(45deg, #00e0ff, #ffffff); /* Neon Blue to White */
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+/* 📜 Text Styling */
+.about-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 224, 255, 0.3);
+    transition: transform 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+/* 🔥 Highlighted Text */
+.highlight-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #00e0ff; /* Neon Blue */
+}
+
+/* 🌟 Hover Effect */
+.about-text:hover {
+    transform: scale(1.05);
+}
+
+/* 🎭 Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* SKILLS SECTION */
+#skills {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.section-title span {
+    color: #00d2ff;
+}
+
+/* Skill List */
+.skills-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #00d2ff;
+    width: 0%;
+    transition: width 1.5s ease-in-out;
+}
+/* Skills Section */
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill p {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: black;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress {
+    height: 100%;
+    background-color: cyan;
+    border-radius: 5px;
+}
+/* Circular Skill Styles */
+.circle-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    position: relative;
+}
+
+.circle svg {
+    width: 100px;
+    height: 100px;
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 8;
+    stroke: black;
+    stroke-dasharray: 251.2;
+    stroke-dashoffset: 251.2;
+    transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* Updated Color Effect */
+.progress-circle {
+    stroke: #00FFFF; /* Neon Cyan */
+    stroke-linecap: round;
+}
+
+/* Percentage Text */
+.percentage-text {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #00FFFF; /* Matching Neon Effect */
+}
+
+
+
+/* PROJECTS SECTION */
+#projects {
+    margin-top: 50px;
+}
+
+#projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #1e1e1e;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-card h3 {
+    margin-bottom: 10px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00d2ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin-top: 50px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .roles-box {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .skills-container {
+        width: 90%;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Contact Section Wrapper */
+.contact-container {
+    text-align: center;
+    margin-top: 40px; /* Adds spacing after projects */
+}
+
+/* Contact Button */
+#contact-btn {
+    background: #00FFFF;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    display: inline-block; /* Centers button */
+}
+
+#contact-btn:hover {
+    background: #00cccc;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.8);
+}
+
+/* Contact Details - Now Positioned Below the Button */
+#contact-details {
+    display: none;
+    background: rgba(0, 0, 0, 0.8); /* Dark Background with Transparency */
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    width: 350px;
+    text-align: center;
+    margin: 20px auto; /* Centers below button */
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.7);
+    transition: all 0.5s ease-in-out;
+}
+
+/* Contact Links */
+#contact-details a {
+    color: #00FFFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#contact-details a:hover {
+    color: #FFD700;
+    text-shadow: 0px 0px 10px rgba(255, 215, 0, 0.8);
+}
+
+
+    
